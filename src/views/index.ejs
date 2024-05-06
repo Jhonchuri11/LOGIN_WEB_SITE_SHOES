@@ -1,0 +1,18 @@
+
+<h1>Hola  <%= username %></h1>
+
+<h2>Subtítulo</h2>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum nisi laudantium commodi nostrum recusandae natus, officiis ad ratione earum asperiores dignissimos voluptatum, obcaecati error suscipit debitis fugiat labore blanditiis.
+Quisquam, optio error ab aspernatur illum asperiores quidem sunt sint rem ut minima, blanditiis, quia earum dignissimos necessitatibus rerum a dolorum tempore. Incidunt eius quas consectetur quia odio expedita aliquam.
+Assumenda dolores quibusdam veniam ut quae odio, cumque repellendus voluptatum deleniti cum molestias in labore est laboriosam, unde ea saepe ullam quis? Molestiae provident earum quas ea? Magni, numquam iste.</p>
+
+<% if (username) { %>
+    <form action="/logout" method="GET">
+        <button type="submit">Cerrar sesión</button>
+    </form>
+<% } else { %>
+    <a href="/login">Iniciar sesión</a>
+    <a href="/register">Registrarse</a>
+<% } %>
+

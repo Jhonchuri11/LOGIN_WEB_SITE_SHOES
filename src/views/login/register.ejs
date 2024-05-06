@@ -1,0 +1,16 @@
+<h1 class="text-5xl mx-16">Regístrate</h1>
+<form action="" method="POST">
+    <input type="text" name="nombre" placeholder="Nombre" class="" required>
+
+    <input type="text" name="email" placeholder="Email" class="" required>
+
+    <input type="text" name="contrasena" placeholder="Password" class="" required>
+
+    <button type="submit">Enviar</button>
+
+    <p>Ya tienes una cuenta?</p><a href="/login">Inicia sesión</a>
+
+    <% if (typeof error !== 'undefined') { %>
+        <p><%= error %></p>
+    <% } %>
+</form>

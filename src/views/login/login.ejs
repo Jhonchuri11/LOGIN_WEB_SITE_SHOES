@@ -1,0 +1,16 @@
+<h1 class="text-5xl mx-16">Iniciar sesión</h1>
+<form action="" method="POST">
+
+    <input type="text" name="email" placeholder="Email" class="" required>
+
+    <input type="text" name="contrasena" placeholder="Contraseña" class="" required>
+
+    <button type="submit">Enviar</button>   
+
+
+    <p>No tienes una cuenta?</p><a href="/register">Regístrate</a>
+
+    <% if (typeof error !== 'undefined') { %>
+        <p><%= error %></p>
+    <% } %>
+</form>
